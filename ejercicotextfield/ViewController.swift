@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var mensaje: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,24 @@ class ViewController: UIViewController {
     }
 
 
+
+    @IBAction func ponerNombre(sender: AnyObject) {
+        mensaje.text = "Gavin"
+    }
+
+
+    @IBAction func ponerApellido(sender: AnyObject) {
+        mensaje.text = "Plaza"
+    }
+ 
+    @IBAction func ponerCiudad(sender: AnyObject) {
+        mensaje.text = "Machala"
+    }
+    
+    @IBAction func ponerPais(sender: AnyObject) {
+        mensaje.text = "Ecuador"
+    }
+
 }
 
+// comentario...
